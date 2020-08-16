@@ -5,33 +5,37 @@
         <condition/>
         <description/>
         <field>active</field>
-        <global>false</global>
+        <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name>onload</name>
+        <name>onChange</name>
         <order/>
-        <script><![CDATA[function onLoad() {
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
    //Type appropriate comment here, and begin script below
    
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-08-16 11:12:23</sys_created_on>
+        <sys_created_on>2020-08-16 20:04:55</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>6a3584ef2f6a1010e76c5e492799b6c2</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>onload</sys_name>
+        <sys_id>15cff5a72fae1010e76c5e492799b6cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onChange</sys_name>
         <sys_overrides/>
         <sys_package display_value="Needit" source="x_520305_needit">9d992b162f2a5010e76c5e492799b60d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Needit">9d992b162f2a5010e76c5e492799b60d</sys_scope>
-        <sys_update_name>sys_script_client_6a3584ef2f6a1010e76c5e492799b6c2</sys_update_name>
+        <sys_update_name>sys_script_client_15cff5a72fae1010e76c5e492799b6cc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-08-16 20:05:26</sys_updated_on>
+        <sys_updated_on>2020-08-16 20:04:55</sys_updated_on>
         <table>x_520305_needit_needit</table>
-        <type>onLoad</type>
+        <type>onChange</type>
         <ui_type>0</ui_type>
-        <view>User</view>
+        <view/>
     </sys_script_client>
 </record_update>
